@@ -20,3 +20,5 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_MARKDOWN: true  # Activate markdown validation
+          MARKDOWN_LINTER_RULES: .github/linters/.markdown-lint.yml  # Specify custom lint rules if needed
